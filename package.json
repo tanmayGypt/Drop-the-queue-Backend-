@@ -1,0 +1,38 @@
+{
+  "name": "kot_admin_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmayGypt/kot_admin_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanmayGypt/kot_admin_backend/issues"
+  },
+  "homepage": "https://github.com/tanmayGypt/kot_admin_backend#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "data-fns": "^1.1.0",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.1",
+    "firebase-admin": "^12.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "nanoid": "^5.0.7",
+    "razorpay": "^2.9.4",
+    "sequelize": "^6.37.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.14.0"
+  }
+}
