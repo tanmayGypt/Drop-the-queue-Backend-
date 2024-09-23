@@ -28,6 +28,7 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.7",
     "nanoid": "^5.0.7",
+    "pg": "^8.13.0",
     "razorpay": "^2.9.4",
     "sequelize": "^6.37.3",
     "uuid": "^9.0.1"
