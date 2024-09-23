@@ -2,13 +2,13 @@ const { Sequelize, DataTypes } = require("sequelize");
 require("dotenv").config();
 
 const sequelize = new Sequelize(
-  "Project_KOT",
-  process.env.AmazonRDSuser,
-  process.env.AmazonRDSpassword,
+  process.env.POSTGRES_DB, // Database name
+  process.env.POSTGRES_USER, // Database username
+  process.env.POSTGRES_PASSWORD, // Database password
   {
-    host: process.env.AmazonRDSendpoint,
-    port: process.env.AmazonRDSport,
-    dialect: "mysql",
+    host: process.env.POSTGRES_HOST, // Database host
+    port: process.env.POSTGRES_PORT, // Database port
+    dialect: "postgres", // Use postgres dialect
   }
 );
 
