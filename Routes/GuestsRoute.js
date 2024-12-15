@@ -50,9 +50,10 @@ route.post("/VerifyGuest", async (req, res) => {
     if (item) {
       const token = guestTokenGenerator(EncodedRoomNo, MobileNumber);
       res.cookie("jwt", token, {
-        sameSite: "None",
-        secure: true,
-        maxAge: 30 * 60 * 1000, // 30 min
+        sameSite: "Lax",
+        secure: true, // This requires HTTPS
+        httpOnly: true, // Make it inaccessible to JavaScript
+        maxAge: 30 * 60 * 1000, // 30 minutes
       });
       res.send(item);
     } else {
